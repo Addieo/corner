@@ -1,0 +1,147 @@
+@charset "utf-8";
+.page4{
+	
+}
+.page4 .inner_four{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #1B7FDD;
+}
+/*第1部分  灯点亮前 light_before  ============================*/
+.page4 .inner_four #light_before{
+	width: 100%;
+	height: 100%;
+	background: #302E5D;
+}
+.page4 .inner_four #light_before .lightoff_bg{
+	position: absolute;
+	bottom: -4px;
+	z-index: 1000;
+}
+.page4 .inner_four #light_before .corner_wall{
+	position: absolute;
+	right: 0;
+	bottom: -2px;
+	z-index: 1100;
+}
+/*灯 没亮的*/
+.page4 .inner_four #light_before .light_off{
+	position: absolute;
+	left: 15px;
+	top: 144px;
+	z-index: 1100;
+}
+
+.page4 .inner_four #light_before .corner_tit img{
+	-webkit-animation: opa .6s linear;
+}
+.page4 .inner_four #light_before .corner_tit{
+	position: absolute;
+	right: 0;
+	top: 5%;
+	z-index: 1100;
+	-webkit-animation: cortit 1s .5s linear;
+}
+@-webkit-keyframes cortit{
+	0%{
+		-webkit-transform: translateY(-1000px);
+	}
+	50%{
+		-webkit-transform: translateY(20px);
+	}
+	70%{
+		-webkit-transform: translateY(-20px);
+	}
+	90%{
+		-webkit-transform: translateY(20px);
+	}
+	100%{
+		-webkit-transform: translateY(0px);
+	}
+}
+/*点亮它 文字*/
+.page4 .inner_four #light_before .click_guide img{
+	-webkit-animation: cguidimg 2.1s linear;
+}
+@-webkit-keyframes cguidimg{
+	0%{
+		opacity: 0;
+	}
+	85%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.page4 .inner_four #light_before .click_guide{
+	position: absolute;
+	top: 265px;
+	left: 190px;
+	z-index: 1100;
+	-webkit-animation: clickguide 1s 2s linear infinite;
+}
+@-webkit-keyframes clickguide{
+	0%{
+		-webkit-transform: scale(1);
+	}
+	50%{
+		-webkit-transform: scale(1.06);
+	}
+	100%{
+		-webkit-transform: scale(1);
+	}
+}
+/*第2部分  灯点亮后 light_after  ============================*/
+.page4 .inner_four #light_after{
+	width: 100%;
+	height: 100%;
+	background: #1B7FDD;
+	display: none;
+}
+.page4 .inner_four #light_after .lighton_bg img{
+	-webkit-animation: opa 1.6s linear;
+}
+.page4 .inner_four #light_after .lighton_bg{
+	position: absolute;
+	bottom: -4px;
+	-webkit-animation: shows .5s 1.5s linear;
+}
+@-webkit-keyframes shows{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.page4 .inner_four #light_after .light_on{
+	position: absolute;
+	left: 13px;
+	top: 144px;
+}
+/*"我们懂你" 文字*/
+.page4 .inner_four #light_after .know_you img{
+	-webkit-animation: opa .6s linear;
+}
+.page4 .inner_four #light_after .know_you{
+	position: absolute;
+	left: 32%;
+	top: 25%;
+	-webkit-animation: shows 1s .5s linear;
+}
+.page4 .inner_four #light_after .flowers img{
+	-webkit-animation: opa 1.6s linear;
+}
+.page4 .inner_four #light_after .flowers{
+	position: absolute;
+	bottom: -14px;
+	right: 5%;
+	-webkit-animation: shows .5s 1.5s linear;
+}
+
+
+
+
+

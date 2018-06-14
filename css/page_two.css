@@ -1,0 +1,65 @@
+@charset "utf-8";
+.page2{
+	
+}
+.page2 .inner_two{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #000000;
+}
+
+/*背景图*/
+.page2 .inner_two .bg img{
+	-webkit-animation: opa .6s linear;
+}
+.page2 .inner_two .bg{
+	position: absolute;
+	bottom: 0;
+	-webkit-animation: bgshow 1s .5s linear;
+}
+@-webkit-keyframes bgshow{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*流星*/
+.page2 .inner_two .star{
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	-webkit-animation: hua 2s linear;
+}
+@-webkit-keyframes hua{
+	from{
+		-webkit-transform: translateX(1000px) translateY(-1000px);
+	}
+	to{
+		-webkit-transform: translateX(0px) translateY(0px);
+	}
+}
+/*标题*/
+.page2 .inner_two .tit_IT img{
+	-webkit-animation: opa 1.3s linear;
+}
+.page2 .inner_two .tit_IT{
+	position: absolute;
+	left: 50%;
+	margin-left: -179px;
+	top: 38%;
+	-webkit-animation: bgshow .5s 1.2s linear;
+}
+.page2 .inner_two .tit_farm img{
+	-webkit-animation: opa 1.7s linear;
+}
+.page2 .inner_two .tit_farm{
+	position: absolute;
+	left: 50%;
+	margin-left: -181px;
+	top: 53%;
+	z-index: 10;
+	-webkit-animation: bgshow 1.2s 1.6s linear;
+}

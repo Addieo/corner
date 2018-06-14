@@ -1,0 +1,236 @@
+@charset "utf-8";
+.page3{
+	
+}
+.page3 .inner_three{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #02172C;
+}
+
+/*背景图*/
+.page3 .inner_three .all_bg1 img{
+	-webkit-animation: opa .4s linear;
+}
+.page3 .inner_three .all_bg1{
+	-webkit-animation: bgshow .5s .3s linear;
+}
+/*第1张 背景图*/
+.page3 .inner_three .earlybulid{
+	position: absolute;
+	bottom: -2px;
+	opacity: 0;
+	-webkit-animation: ebmove 2.5s 1s linear;
+}
+@-webkit-keyframes ebmove{
+	0%{
+		opacity: 0;
+	}
+	15%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.page3 .inner_three .eb_tit{
+	position: absolute;
+	top: 5%;
+	opacity: 0;
+	-webkit-animation: ebmove 2s 1.5s linear;
+}
+
+/*第2张 与左上角标题 车、人 动画*/
+.page3 .inner_three .bus_station{
+	position: absolute;
+	bottom: 0px;
+	opacity: 0;
+	-webkit-animation: stationmove 5.5s 4s linear;
+}
+@-webkit-keyframes stationmove{
+	0%{
+		opacity: 0;
+	}
+	15%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.page3 .inner_three .bus_tit{
+	position: absolute;
+	top: 5%;
+	opacity: 0;
+	-webkit-animation: stationmove 4s 5s linear;
+}
+/*公交车*/
+.page3 .inner_three .bus{
+	opacity: 0;
+	position: absolute;
+	bottom: 8%;
+	left: 0;
+	-webkit-animation: busmove 1.5s 5.5s linear;
+}
+@-webkit-keyframes busmove{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(0px);
+	}
+	20%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateX(-700px);
+	}
+}
+/*人*/
+.page3 .inner_three .lastbus{
+	position: absolute;
+	bottom: 8%;
+	right: 10%;
+	opacity: 0;
+	-webkit-animation: lastmove 3.6s 5.6s linear;
+}
+@-webkit-keyframes lastmove{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(700px);
+	}
+	10%{
+		opacity: 1;
+		-webkit-transform: translateX(700px);
+	}
+	25%{
+		opacity: 1;
+		-webkit-transform: translateX(-30px);
+	}
+	32%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+	87%{
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: translateX(0px);
+	}
+}
+/*最后一张图*/
+.page3 .inner_three .team_bg img,.page3 .inner_three .wall img{
+	-webkit-animation: opa 9.3s linear;
+}
+.page3 .inner_three .team_bg{
+	position: absolute;
+	top: 0;
+	-webkit-animation: xian .5s 9.2s linear;
+}
+/*last_right 右侧：人与墙*/
+.page3 .inner_three .last_right{
+	position: absolute;
+	right: 0;
+	bottom: -2px;
+}
+.page3 .inner_three .last_right .zw_last{
+	visibility: hidden;
+}
+.page3 .inner_three .last_right .wall{
+	position: absolute;
+	right: 0;
+	bottom: -2px;
+	-webkit-animation: xian .5s 9.2s linear;
+}
+@-webkit-keyframes xian{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+/*坐着的人*/
+.page3 .inner_three .last_right .person_sit img{
+	-webkit-animation: opa 9.5s linear;
+}
+.page3 .inner_three .last_right .person_sit{
+	position: absolute;
+	top: 0;
+	margin-top: -142px;
+	right: 0;
+	margin-right: 32px;
+	-webkit-animation: xian 1s 9.4s linear;
+}
+
+/*最后 文字*/
+.page3 .inner_three .last_word{
+	position: absolute;
+	top: 30%;
+	margin-left: 100px;
+}
+.page3 .inner_three .last_word .zw_space{
+	visibility: hidden;
+}
+.page3 .inner_three .last_word .myteam img{
+	-webkit-animation: opa 10.5s linear;
+}
+.page3 .inner_three .last_word .myteam_txt1 img{
+	-webkit-animation: opa 11.1s linear;
+}
+.page3 .inner_three .last_word .myteam_txt2 img{
+	-webkit-animation: opa 11.6s linear;
+}
+.page3 .inner_three .last_word .myteam_txt3 img{
+	-webkit-animation: opa 12.1s linear;
+}
+.page3 .inner_three .last_word .myteam{
+	position: absolute;
+	top: 0;
+	-webkit-animation: lastscale .5s 10.4s linear;
+}
+.page3 .inner_three .last_word .myteam_txt1{
+	position: absolute;
+	top: 20%;
+	-webkit-animation: lastscale .5s 10.9s linear;
+}
+.page3 .inner_three .last_word .myteam_txt2{
+	position: absolute;
+	top: 46%;
+	-webkit-animation: lastscale .5s 11.4s linear;
+}
+.page3 .inner_three .last_word .myteam_txt3{
+	position: absolute;
+	top: 76%;
+	-webkit-animation: lastscale .5s 11.9s linear;
+}
+@-webkit-keyframes lastscale{
+	from{
+		-webkit-transform: scale(0);
+	}
+	to{
+		-webkit-transform: scale(1);
+	}
+}
+/*where 在哪*/
+.page3 .inner_three .where img{
+	-webkit-animation: opa 12.8s linear;
+}
+.page3 .inner_three .where{
+	position: absolute;
+	left: 50%;
+	margin-left: -142.5px;
+	bottom: 15%;
+	-webkit-animation: xian .5s 12.6s linear;
+}
+
+

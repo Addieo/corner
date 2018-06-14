@@ -1,0 +1,157 @@
+@charset "utf-8";
+.page9{
+	
+}
+.page9 .inner_nine{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #3E88F1;
+}
+
+/*云*/
+.page9 .inner_nine .end_cloudys img{
+	-webkit-animation: opa 2s linear;
+}
+.page9 .inner_nine .end_cloudys{
+	position: absolute;
+	top: 10%;
+	left: 3%;
+	-webkit-animation: shan 2.5s linear infinite;
+}
+/*星*/
+.end_bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/*字*/
+.page9 .inner_nine .end_logo img{
+	-webkit-animation: opa 1.1s linear;
+}
+.page9 .inner_nine .end_logo{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -169.5px;
+	-webkit-animation: endshow 1s 1s linear;
+}
+@-webkit-keyframes endshow{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.page9 .inner_nine .end_txt img{
+	-webkit-animation: opa 2.1s linear;
+}
+.page9 .inner_nine .end_txt{
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	margin-left: -185.5px;
+	-webkit-animation: endjump .5s 2s linear;
+}
+
+.page9 .inner_nine .end-mail img{
+	-webkit-animation: opa 2.3s linear;
+}
+.page9 .inner_nine .end-mail{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -195px;
+	-webkit-animation: endjump .5s 2.2s linear;
+}
+
+.page9 .inner_nine .end_ClickGuide img{
+	-webkit-animation: opa 2.5s linear;
+}
+.page9 .inner_nine .end_ClickGuide{
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	margin-left: -105.5px;
+	-webkit-animation: endjump .5s 2.4s linear;
+}
+
+.page9 .inner_nine .end_BottomTxt img{
+	-webkit-animation: opa 2.9s linear;
+}
+.page9 .inner_nine .end_BottomTxt{
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	margin-left: -127.5px;
+	-webkit-animation: endjump .5s 2.8s linear;
+}
+@-webkit-keyframes endjump{
+	0%{
+		opacity: 1;
+		-webkit-transform: translateY(-1000px);
+	}
+	50%{
+		opacity: 1;
+		-webkit-transform: translateY(20px);
+	}
+	75%{
+		opacity: 1;
+		-webkit-transform: translateY(-20px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+
+/*人物*/
+.page9 .inner_nine .end_avatar img{
+	-webkit-animation: endjump .5s 2.6s linear;
+}
+.page9 .inner_nine .end_avatar{
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	margin-left: -196.5px;
+	opacity: 0;
+	-webkit-animation: endavatar 2s 2.7s linear infinite;
+}
+@-webkit-keyframes endavatar{
+	0%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+	40%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+	50%{
+		opacity: 1;
+		-webkit-transform: translateY(25px);
+	}
+	60%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+	70%{
+		opacity: 1;
+		-webkit-transform: translateY(25px);
+	}
+	80%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+	90%{
+		opacity: 1;
+		-webkit-transform: translateY(15px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+
+

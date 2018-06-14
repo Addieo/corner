@@ -1,0 +1,85 @@
+@charset "utf-8";
+.page8{
+	
+}
+.page8 .inner_eight{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #B5EFFD;
+}
+
+/*中间 文字*/
+.page8 .inner_eight .intro_box{
+	position: absolute;
+	top: 14%;
+	left: 3%;
+	margin-top: 4px;
+}
+.page8 .inner_eight .intro_box .intro_word{
+	width: 88%;
+	padding: 65px 12px 115px;
+	font-size: 1.5rem;
+	line-height: 38px;
+	text-indent: 58px;
+	color: #FFFFFF;
+	background: #EF3D38;
+	border: 15px solid #FC5955;
+	border-radius: 20px;
+}
+
+.page8 .inner_eight .intro_cloudy{
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	margin-left: -305px;
+}
+.page8 .inner_eight .intro_flowers{
+	position: absolute;
+	top: 6%;
+	left: 3%;
+	-webkit-animation: introflowers 1s linear infinite;
+}
+@-webkit-keyframes introflowers{
+	0%{
+		-webkit-transform: scale(1);
+	}
+	50%{
+		-webkit-transform: scale(1.07);
+	}
+	100%{
+		-webkit-transform: scale(1);
+	}
+}
+
+.page8 .inner_eight .intro_logo{
+	position: absolute;
+	top: 9%;
+	left: 50%;
+	margin-left: -160px;
+}
+.page8 .inner_eight .intro_star{
+	position: absolute;
+	bottom: 19%;
+	right: 31%;
+	-webkit-animation: introstar .8s linear infinite;
+}
+@-webkit-keyframes introstar{
+	0%{
+		opacity: .3;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: .3;
+	}
+}
+
+.page8 .inner_eight .intro_avatar{
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+}
+
+
